@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    tools:context=".DataEntrypage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:text="SecNotes"
+        android:id="@+id/topic3"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/topic3"
+        android:src="@drawable/icon">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Make Your Details protected"
+        android:layout_below="@+id/topic3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/topic4"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        >
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic4"
+        android:background="@drawable/textbox"
+        android:id="@+id/name"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="Site Name / App Name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp">
+    </EditText>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="364dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/name"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/textbox"
+        android:hint="Passwords and Sensitive data">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#440CA6"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Save">
+
+    </Button>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="View Data"
+        android:id="@+id/View"
+        android:layout_below="@+id/send"
+        android:backgroundTint="#440CA6"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="30dp"
+        >
+    </Button>
+
+
+
+</RelativeLayout>

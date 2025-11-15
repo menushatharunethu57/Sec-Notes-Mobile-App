@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back5"
+    tools:context=".Content_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:text="SecNotes"
+        android:id="@+id/topic2"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/topic2"
+        android:src="@drawable/icon">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/topic2"
+        android:layout_marginTop="50dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/topic2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Records"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/topic2"
+        android:layout_marginTop="350dp"
+        android:visibility="invisible">
+
+    </TextView>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:layout_below="@+id/linear"
+        android:backgroundTint="#009688"
+        android:textColor="@color/black"
+        android:id="@+id/btn3"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        >
+
+    </Button>
+
+</RelativeLayout>

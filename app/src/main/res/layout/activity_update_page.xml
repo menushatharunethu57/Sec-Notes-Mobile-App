@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back3"
+    tools:context=".update_page">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        android:text="SecNotes"
+        android:id="@+id/topic5"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        >
+    </TextView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/topic5"
+        android:src="@drawable/icon">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Update Data"
+        android:layout_below="@+id/topic5"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/topic6"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:fontFamily="sans-serif-condensed"
+        >
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topic6"
+        android:background="@drawable/textbox"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/UpID"
+        android:hint="Update ID"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UpID"
+        android:background="@drawable/textbox"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/Upname"
+        android:hint="Update Topic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Upname"
+        android:hint="Update Data"
+        android:background="@drawable/textbox"
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/Updata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp">
+    </EditText>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/upbtn"
+        android:layout_below="@+id/Updata"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Update"
+        android:textColor="@color/black"
+        android:backgroundTint="#03A9F4"
+        android:layout_marginTop="150dp"
+        >
+    </Button>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="View Data"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/black"
+        android:id="@+id/View"
+        android:layout_below="@+id/upbtn"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        >
+    </Button>
+
+</RelativeLayout>
